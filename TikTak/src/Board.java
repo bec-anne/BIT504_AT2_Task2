@@ -12,7 +12,7 @@ public class Board {
 	/** Constructor to create the game board */
 	public Board() {
 		
-	 //TODO: initialise the cells array using ROWS and COLS constants 
+	 //initialise the cells array using ROWS and COLS constants 
 
 		cells = new Cell[GameMain.ROWS][GameMain.COLS];
 		for (int row = 0; row < GameMain.ROWS; ++row) {
@@ -48,8 +48,7 @@ public class Board {
 		   cells[playerRow][2].content == thePlayer )
 			return true; 
 		
-		 // TODO: Check if the player has 3 in the playerCol.
-		 // Hint: Use the row code above as a starting point, remember that it goes cells[row][column] 
+		 
 		// Check if player has 3-in-a-column
 	    if (cells[0][playerCol].content == thePlayer &&
 	        cells[1][playerCol].content == thePlayer &&
@@ -65,7 +64,7 @@ public class Board {
 			return true;
 		 
 		
-		// TODO: Check the diagonal in the other direction
+		// Check the diagonal in the other direction
 		if (playerRow + playerCol == 2 &&
 		        cells[0][2].content == thePlayer &&
 		        cells[1][1].content == thePlayer &&
